@@ -1,0 +1,38 @@
+{
+  "name": "Nerf",
+  "version": "0.0.0",
+  "private": false,
+  "author": "The Nation of Alex",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thenationofalex/nerf"
+  },
+  "license": "GPL-3.0",
+  "engines": {
+    "node": "4.4.0",
+    "npm": "3.3.x"
+  },
+  "scripts": {
+    "build": "gulp"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-router": "^2.0.1",
+    "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.0.6",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
+    "reactify": "^1.1.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
