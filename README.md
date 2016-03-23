@@ -36,6 +36,13 @@ A breakdown on the application structure is as follows.
 - **views**
     - **webviews** Jade templates for web views
 
+### Development
+
+Gulp has been setup with the following tasks:
+
+`gulp server` Starts the App
+`gulp watch` Watches `./app/Webviews/index.js` and rebuilds on change.
+
 ### Setup and Deployment
 
 Install all Dependencies via NPM `npm install`

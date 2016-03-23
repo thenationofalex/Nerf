@@ -58,6 +58,12 @@ const HomeContent = React.createClass({
             </ul>
           </li>
         </ul>
+        <h3>Development</h3>
+        <p>
+        Gulp has been setup with the following tasks: <br />
+        <code>gulp server</code> Starts the App<br />
+        <code>gulp watch</code> Watches <code>./app/Webviews/index.js</code> and rebuilds on change.
+        </p>
         <h3>Setup and Deployment</h3>
         <p>
           Install all Dependencies via NPM &nbsp;<code>npm install</code><br />
