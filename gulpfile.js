@@ -11,16 +11,16 @@ var uglify = require('gulp-uglify')
 var browserify = require('browserify')
 var source = require('vinyl-source-stream')
 var buffer = require('vinyl-buffer')
-var reactify = require('reactify')
 var nodemon = require('gulp-nodemon')
+var babelify = require('babelify')
 
 gulp.task('webview', function () {
   return browserify({
     entries: ['./app/Webviews/index.js'],
-    transform: [reactify],
     debug: true,
     cache: {}, packageCache: {}, fullPaths: true
   })
+    .transform(babelify, {presets: ['es2015', 'react']})
     .bundle()
     .pipe(source('webview.js'))
     .pipe(buffer())
